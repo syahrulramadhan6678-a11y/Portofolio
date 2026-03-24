@@ -7,41 +7,52 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
+<script src="script.js"></script>
+
 <body>
 
     <nav class="navbar">
         <div class="logo">MyProfile</div>
         <ul class="nav-links">
             <li><a href="#">Home</a></li>
-            <li><a href="#About">About</a></li>
-            <li><a href="#Skills">Skills</a></li>
-            <li><a href="#Contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <header>
-
+    <header id="home">
+    <div class="container">
         <h1>SYAHRUL RAMADHAN</h1>
-        <img src="myprofile.jpg" alt="Photo" class="profile"> 
-        <p>Student / Instrumentation Engineer / polytechnic Negeri Batam / Web Beginner</p>
-    
+        <img src="myprofile.jpg" alt="photo" class="profile"> 
+        <p>Web Beginner / Instrumentation Engineer Student / Batam State Polytechnic</p>
+    </div>
     </header>
-<section id="About" class="About">
+
+<section id="about" class="about">
     <h2>About Me</h2>
-    <P>I'm interested in electronics and microcontroller programming, and I'm also interested in computer science. This is my first website.</P>
+    <P>I am a student at Batam State Polytechnic with a deep interest in Computer Science and Embedded Systems. My primary focus is on bridging the gap between the complexity of software algorithms and the real world through microcontroller programming. This website serves as both a creative space and a record of my technical journey.</P>
 </section>
-<section id="Skills" class="Skills">
+
+<section id="skills" class="skills">
     <h2>Skills</h2>
     <ul>
-        <li>Arduino</li>
-        <li>STM32 Bluepill</li>
-        <li>3D Design AutoCAD</li>
-        <li>HTML, CSS, JS</html></li>
-        <li>PHP Myadmin</li>
-        <li>Android Studio Dolphin</li>
+        <li onclick="showskill('arduino')">Arduino</li>
+        <li onclick="showskill('stm32')">STM32</li>
+        <li onclick="showskill('autocad')">3D Design AutoCAD</li>
+        <li onclick="showskill('frontend')">Front End Developer</html></li>
+        <li onclick="showskill('network')">Network Engineer Intern</li>
+        <li onclick="showskill('android')">Android Studio Beginner</li>
+        <li onclick="showskill('devops')">DevOps Beginner</html></li>
     </ul>
+
+    <div id="skill-detail">
+        <p>Klik salah satu skill untuk melihat detail</p>
+    </div>
 </section>
-<section id="Contact" class="Contact">
+
+<section id="contact" class="contact">
     <h2>Contact</h2>
     <p>Email    : syahrul.ramadhan6678@gmail.com</p>
     <p>Linkedin  : <a href="https://www.linkedin.com/in/syahrul-ramadhan-9689483b6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="btn">
