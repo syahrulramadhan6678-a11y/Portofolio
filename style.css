@@ -21,12 +21,14 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #0a66c2;
-    padding: 15px 30px;
-    color: white;
-    
+
+    background: rgba(10, 102, 194, 0.95);
+    backdrop-filter: blur(10px);
+
+    padding: 15px 40px;
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 
 .logo {
@@ -59,7 +61,7 @@ header {
     background: #0a66c2;
     color: white;
     text-align: center;
-    padding: 30px;
+    padding: 60px 20px;
     animation: fadeslide 1s ease;
 }
 
@@ -75,10 +77,16 @@ header {
 }
 
 header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
     animation: fadeIn 1.5s ease;
 }
 header h2 {
     animation: fadeIn 2s ease;
+}
+
+header p {
+    opacity: 0.9;
 }
 
 @keyframes fadeIn {
@@ -108,12 +116,19 @@ header h2 {
 }
 
 section {
-    padding: 20px;
-    margin: 15px;
+    padding: 25px;
+    margin: 20px;
     background: white;
-    border-radius: 10px;
+    border-radius: 12px;
+
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
 }
+
+section:hover {
+    transform: translateY(-5px);
+}
+
 a {
   color: blue;
   text-decoration: none;
@@ -140,3 +155,39 @@ a:hover {
     margin-right: 8px;
 
 }
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+.skills ul {
+    display: grid;
+    grid-template-columns: repeat (auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 0;
+    list-style: none;
+}
+
+.skills li {
+    background: #eaf3ff;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#skill-detail {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f4f4f4;
+    border-radius: 10px;
+}
+
+#skill-detail img {
+    width: 200px;
+    max-width: 300px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
