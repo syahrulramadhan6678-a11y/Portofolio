@@ -2,6 +2,21 @@ html {
     scroll-behavior: smooth;
 }
 
+header {
+    background: #0a66c2;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    animation: fadeslide 1s ease;
+
+    width: 100%;
+}
+
+header .container {
+    max-width: 900px;
+    margin: auto;
+}
+
 body {
     font-family: 'Times New Roman', Times, serif;
     margin: 0;
