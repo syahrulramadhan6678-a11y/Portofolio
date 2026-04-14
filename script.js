@@ -2,19 +2,11 @@ function showskill(skill) {
     const detail = document.getElementById('skill-detail');
 
 
-    if (skill === "arduino") {
+    if (skill === "Embedded system & IoT Developer") {
         detail.innerHTML = `
         <h3>Arduino</h3>
-        <p>I use Arduino to create various projects, such as sensors and device controls. </p>
-        <img src="arduino.jpg">
-        `;
-    }
-    
-    else if (skill === "stm32") {
-        detail.innerHTML = `
-        <h3>STM32</h3>
-        <p>I use it for DC motor control, ADC, and embedded systems. </p>
-        <img src="stm32.jpg">
+        <p>I use microcontrollers such as Arduino, ESP32, and STM32 to develop a variety of embedded system projects, including sensor-based monitoring, automation, and IoT applications. I am experienced in interfacing different types of sensors, processing real-time data, and implementing communication protocols like serial, I2C, and SPI. Additionally, I build systems that can transmit data to servers or mobile applications for monitoring purposes, combining both hardware and software integration. Through these projects, I focus on creating efficient, reliable, and practical solutions for real-world applications.</p>
+
         `;
     }
 
